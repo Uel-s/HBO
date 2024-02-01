@@ -105,5 +105,20 @@ cast2 = Cast(actor_id=actor2.actor_id, movie_id=movie1.movie_id)
 session.add_all([cast1, cast2])
 session.commit()
 
+# --Get all Actor
+
+all_actors = session.query(Actor).all()
+for actor in allactor_name:
+    print(actor.actor_name)
+
+# --Get one movie
+
+one_movie = session.query(Movie).filter_by(movie_id =1).first()
+
+print(one_movie)
+
+
+
+
 # Close the session
 session.close()
