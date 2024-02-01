@@ -107,15 +107,15 @@ session.commit()
 
 # --Get all Actor
 
-all_actors = session.query(Actor).all()
-for actor in allactor_name:
-    print(actor.actor_name)
+# all_actors = session.query(Actor).all()
+# for actor in allactor_name:
+#     print(actor.actor_name)
 
-# --Get one movie
+# # --Get one movie
 
-one_movie = session.query(Movie).filter_by(movie_id =1).first()
+# one_movie = session.query(Movie).filter_by(movie_id =1).first()
 
-print(one_movie)
+# print(one_movie)
 
 
 
